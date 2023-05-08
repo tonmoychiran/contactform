@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+
+
+</head>
+
+<body>
+    <form class="container " id="formAllignment" action="registration.php" method="post">
+        <h2>Contact Us</h2>
+        <fieldset>
+            <legend>Personalia</legend>
+            <input type="text" name="fName" placeholder="First Name" required>
+            <input type="text" name="lName" placeholder="Last Name" required>
+        </fieldset>
+        <fieldset>
+            <legend>Contact</legend>
+            <input type="text" name="email" placeholder="Email" required>
+            <input type="tel" name="phnNo" placeholder="Mobile Number" required>
+        </fieldset>
+        <fieldset>
+            <legend>Your Message</legend>
+            <textarea name="message" required cols="42" row="5"></textarea>
+        </fieldset>
+
+        <input id="submit" type="submit" value="Submit">
+    </form>
+</body>
+
+</html>

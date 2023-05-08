@@ -1,0 +1,44 @@
+@media (max-width: 500px) {
+    h2{
+        font-weight: bold;
+        margin: 5px;
+        color:#02C37E
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    body {
+        background-image: none;
+    }
+
+    #formAllignment {
+        float: right;
+        margin:10px;
+    }
+
+    input, textarea {
+        height: 30px;
+        width: 300px;
+        margin: 10px 10px;
+    }
+
+    fieldset {
+        width: 350px;
+        margin-bottom: 15px;
+    }
+
+    #submit {
+        font-weight: bold;
+        margin: 10px;
+        width: 100px;
+        color: #02C37E;
+        border: 2px solid #02C37E;
+    }
+
+
+
+
+}
