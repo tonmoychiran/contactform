@@ -1,0 +1,34 @@
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    margin-top: 120px;
+    
+}
+
+legend{
+    font-weight: bold;
+    font-size:50px;
+    color: rgb(129, 27, 27);
+}
+fieldset{
+    border-color: rgb(129, 27, 27);
+    width: 400px;
+}
+.item{
+    border-color: rgb(129, 27, 27);
+    width: 350px;
+    height: 50px;
+    margin:20px;
+
+}
+
+#submitbutton{
+    border-color: brown;
+    background-color: brown;
+    color:aliceblue;
+    width: 100px;
+    height: 50px;
+    margin: 20px;
+}

@@ -5,11 +5,7 @@
 	$phnNo=$_POST['phnNo'];
 	$message=$_POST['message'];
 	
-	$conn= mysqli_connect('localhost', 'root', '', 'usermessages');
-	if($conn==false){
-		die('Connection Failed : '.mysqli_connect_error());	
-
-	}
+	include 'connection.php';
 	
 	$statement="INSERT INTO messages(fName,lName,email,phoneNo,message) 
 	VALUES('$fName', '$lName','$email','$phnNo','$message')";
@@ -18,11 +14,7 @@
 	echo'<script> alert("Thank you!We got your message.")
 	window.location.href=" index.html"
 	</script>';
-	
-	
 	}
 	
 	mysqli_close($conn);
-
-
 ?>

@@ -1,0 +1,36 @@
+h1{
+    text-align: center;
+    color: brown;
+}
+
+input{
+    position:relative;
+    bottom: 10px;
+    left: 44%;
+    width: 200px;
+    height: 40px;
+    font-size: larger;
+    font-weight: bold;
+    background-color: rgb(129, 27, 27);
+    border-color: aliceblue;
+    color: aliceblue;
+}
+table{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+th{
+    background-color: rgb(129, 27, 27);
+    color:aliceblue;
+    font-size: 20px;
+    text-align: center;
+    padding: 8px;
+    
+}
+
+td{
+    font-size: medium;
+    border-bottom: 1px solid black;
+}
