@@ -2,17 +2,21 @@
 $uName=$_POST['uName']; 
 $pass=$_POST['pass'];
 
+session_start();
+if(isset($_SESSION['uName'])){
+    header("Location: adminpage.php");
+    exit;
+}
+
 if($uname!=="ADMIN" and $pass!=="adminY")
 {   echo'<script>alert("Wrong Password")
-    window.location.href="adminloginpage.html"
+    window.location.href="admin.html"
     </script>';
 }
 else
 {
-    session_start();
-    session_destroy();
+    $_SESSION['logged_in'] = true;
     header("Location: adminpage.php");   
 }
 
-mysqli_close($conn);
 ?>

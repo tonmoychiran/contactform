@@ -3,6 +3,11 @@ include 'connection.php';
 session_start();
 $statement="SELECT * from messages";
 $result=mysqli_query($conn,$statement);
+
+if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
+    header('Location: index.php');
+    exit;
+}
 ?>
 
 <html>
