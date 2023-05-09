@@ -17,6 +17,7 @@ else
 {
     $_SESSION['logged_in'] = true;
     header("Location: adminpage.php");   
+    
 }
 
 ?>
